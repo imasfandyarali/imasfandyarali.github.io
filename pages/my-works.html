@@ -6,16 +6,94 @@
     <title>My Works</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .equal-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 420px;
+        }
+
+        .equal-card .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767.98px) {
+            .equal-card {
+                min-height: 320px;
+            }
+
+            .equal-card .card-img-top {
+                height: 160px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>My Works</h1>
-    </header>
-    <main>
-        <p>This is a placeholder page for "My Works". Replace this text with your actual portfolio or project showcase
-            content.</p>
-    </main>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Asfand</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="../index.html#home-section" class="nav-link"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item"><a href="../index.html#about-section" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item"><a href="../index.html#projects-section"
+                            class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="my-works.html" class="nav-link"><span>My Works</span></a></li>
+                    <li class="nav-item"><a href="../index.html#skills-section" class="nav-link"><span>Skills</span></a>
+                    </li>
+                    <li class="nav-item"><a href="../index.html#resume-section" class="nav-link"><span>Resume</span></a>
+                    </li>
+                    <li class="nav-item"><a href="../index.html#services-section"
+                            class="nav-link"><span>Services</span></a></li>
+                    <li class="nav-item"><a href="https://www.google.com" class="nav-link" target="_blank"><span>Free
+                                Stuff</span></a></li>
+                    <li class="nav-item"><a href="../index.html#contact-section"
+                            class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-5 my-5">
+        <div class="row pt-5">
+            <div class="col-md-6 mb-4">
+                <div class="card equal-card mx-2" style="height: 100%;">
+                    <img class="card-img-top" src="../images/project-1.jpg" alt="Card image cap"
+                        style="height:220px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title date bg-dark pl-2"><span>Card Title 1</span></h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card equal-card mx-2" style="height: 100%;">
+                    <img class="card-img-top" src="../images/project-2.jpg" alt="Card image cap"
+                        style="height:220px; object-fit:cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>&copy;
             <script>document.write(new Date().getFullYear());</script> All rights reserved.
